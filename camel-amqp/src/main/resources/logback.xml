@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator"/>
+
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<target>System.out</target>
+		<encoder>
+			<pattern>%date{MM/dd HH:mm:ss} %-5level[%thread] %logger{1} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="akka" level="DEBUG" />
+
+	<!-- QPid client debug logging -->
+	<logger name="FRM" level="DEBUG" />
+
+	<root level="DEBUG">
+		<appender-ref ref="CONSOLE"/>
+	</root>
+
+</configuration>

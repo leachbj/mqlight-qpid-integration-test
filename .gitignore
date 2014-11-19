@@ -1,0 +1,13 @@
+target/
+.idea/
+*.iml
+.idea_modules/
+bin/
+.classpath
+.project
+.settings/
+*.orig
+*.BASE*
+*.LOCAL*
+*.REMOTE*
+*.BACKUP*
